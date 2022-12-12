@@ -30,3 +30,32 @@ if * then it meaks on all the versions.
 To activate the virtual environment we will use the python interpreter inside the virtual environment and not the one that is installed globally on the machine. Hence we use pipenv shell to open the environment.
 
 django-admin is a utility that comes with django. We can see all commands we can use if we run it.
+
+Modules in storefront:
+1. settings -> defining the settings of the module.
+2. urls -> defining the urls of the application.
+3. wsgi and asgi -> used for deployment.
+
+manage.py -> This is a wrapper around django admin. Instead of django-admin we can use manage.py as it knows about the settings of our project than django admin.
+By default it will use 8000 port.
+
+pipenv --venv -> to find the virtual path of our environment
+
+Then we need to give in our view -> command palatte -> python interpreter -> pathlink/bin/python
+
+In Installed apps:
+everytime we install a app we need to declare it in the installed apps.
+1. 'django.contrib.admin', -> for admin interface
+2. 'django.contrib.auth', -> for authenticating users
+3. 'django.contrib.contenttypes',
+4. 'django.contrib.sessions', -> temporary memory on the server to manage users data (which is not used these days. can be ignored)
+5. 'django.contrib.messages', -> for displaying one time notifications to the users
+6. 'django.contrib.staticfiles', -> to serve static files like images, pdfs etc
+
+migrations folder is for generating databade tables
+
+1. admin module for how the admin interface is going to look like
+2. apps module is to configure the application
+3. models module is for pulling the databases and presenting to the users
+4. tests module for writing the unit tests
+5. views module is for request handling. takes the request and returns response.
