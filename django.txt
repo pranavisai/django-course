@@ -63,3 +63,8 @@ migrations folder is for generating databade tables
 The launch.json file is used to make the vs code understand how to run and debug the application.
 
 We can also debug Django using the django debgu toolbar
+
+Data Modelling:
+Example: Needed in ecommerce website: Product , Collection (that has categories of products) (can have multiple relationships with products), there will be either 0 or 1 featured product.
+We will need to break down the apps and make them do individual things to reduce complexity and increase effeciency. Self contained and zero coupling
+
