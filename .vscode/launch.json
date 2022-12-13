@@ -1,0 +1,22 @@
+// this is like a key value pair in python.
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django", //vs code undertsnad to use python
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py", //to launch the manage.py 
+            "args": [
+                "runserver",  // and as argument to pass the runserver
+                "9000" // to not clash with any exisitng ports
+            ],
+            "django": true,
+            "justMyCode": true
+        }
+    ]
+}

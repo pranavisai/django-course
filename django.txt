@@ -59,3 +59,7 @@ migrations folder is for generating databade tables
 3. models module is for pulling the databases and presenting to the users
 4. tests module for writing the unit tests
 5. views module is for request handling. takes the request and returns response.
+
+The launch.json file is used to make the vs code understand how to run and debug the application.
+
+We can also debug Django using the django debgu toolbar
